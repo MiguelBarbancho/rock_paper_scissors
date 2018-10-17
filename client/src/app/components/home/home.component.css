@@ -1,0 +1,39 @@
+.btn {
+  padding: 35px;
+  margin: 10px;
+  border-radius: 500px;
+  color: white;
+  background-color: brown;
+  border-color: brown;
+  font-size: 25px;
+}
+
+.btn2 {
+  padding: 10px;
+
+  border-radius: 50px;
+  color: white;
+  background-color: rgb(165, 71, 42);
+  border-color: rgb(165, 71, 42);
+  font-size: 20px;
+}
+
+p {
+  color: antiquewhite;
+  font-size: 30px;
+}
+
+.panel {
+  background-color: rgb(78, 21, 21);
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.rps {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+button img {
+  max-width: 100px;
+}

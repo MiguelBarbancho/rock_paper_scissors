@@ -1,0 +1,62 @@
+<div>
+  <img width="300" alt="Angular Logo" src="../assets/images/rock-paper-scissors.png">
+</div>
+
+<div class="col-12 row">
+<div class="col-12">
+
+  <h2 class="rps" *ngIf = "remote"> CHOOSE YOUR OPTION (PLAYING ON REMOTE):
+  <button class="btn2" (click)="remoteChange()" *ngIf = "remote">CHANGE TO LOCAL</button></h2>
+
+  <h2 class="rps" *ngIf = "remote == false"> CHOOSE YOUR OPTION (PLAYING LOCAL):
+  <button class="btn2" (click)="remoteChange()" *ngIf = "remote == false">CHANGE TO REMOTE</button></h2>
+
+</div>
+
+  <div class="col-4">
+
+    <p class="panel">{{"YOU HAVE CHOSEN: "}}</p>
+    <p>{{election_human}}</p>
+
+    <p class="panel">{{"CPU HAS CHOSEN: "}}</p>
+    <p>{{election_cpu}}</p>
+
+    <p class="panel">{{"RESULT: "}}</p>
+    <p>{{result_final}}</p>
+
+  </div>
+
+  <div class="col-4">
+
+      <button (click)="option(0)" class="btn btn-primary">
+        <p>ROCK</p>
+        <img src="../../../assets/images/ROCK.png">
+      </button>
+      <button (click)="option(1)" class="btn btn-primary">
+        <p>PAPER</p>
+          <img src="../../../assets/images/PAPER.png">
+      </button>
+      <button (click)="option(2)" class="btn btn-primary">
+        <p>SCISSORS</p>
+          <img src="../../../assets/images/SCISSORS.png">
+      </button>
+
+    </div>
+
+  <div class="col-4">
+
+    <p class="panel">{{"PLAYED GAMES: "}}</p>
+    <p>{{cont}}</p>
+
+    <p class="panel">{{"WON GAMES: "}}</p>
+    <p>{{win}}</p>
+
+    <p class="panel">{{"LOST GAMES: "}}</p>
+    <p>{{lose}}</p>
+
+    <p class="panel">{{"TIED GAMES: "}}</p>
+    <p>{{tie}}</p>
+
+  </div>
+  <div class="col-1"></div>
+</div>
